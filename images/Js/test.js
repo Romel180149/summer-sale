@@ -100,5 +100,14 @@ cards.forEach(card => {
         makeBtnClick(this);
     });
 });
-// 
+// go home 
+document.addEventListener("DOMContentLoaded", function () {
+    const goHomeButton = document.getElementById("goHome");
+    const modalForm = document.getElementById("modalForm");
+
+    goHomeButton.addEventListener("click", function () {
+        // Close the modal (you should replace this with your actual modal closing logic)
+        modalForm.classList.add("hidden"); // Add a class to hide the modal
+    });
+});
  

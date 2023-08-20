@@ -11,6 +11,7 @@
 </head>
 
 <body>
+  <!-- banner section -->
   <div class="hero h-[600px] bg-orange-100">
     <div class="hero-content flex-col lg:flex-row-reverse ">
       <img src="./Summer 1.png" class="max-w-sm rounded-lg " />
@@ -25,6 +26,7 @@
       </div>
     </div>
   </div>
+  <!-- card categories-1 -->
   <header class="w-full">
     <div class="flex gap-5 flex-col md:flex-row">
       <div>
@@ -154,14 +156,18 @@
             </button>
             <!-- Open the modal using ID.showModal() method -->
             <dialog id="my_modal" class="modal modal-bottom sm:modal-middle">
-              <form method="dialog" class="modal-box">
-                <h3 class="font-bold text-lg">Hello!</h3>
-                <p class="py-4">Press ESC key or click the button below to close</p>
-                <div class="modal-action">
-                  <!-- if there is a button in form, it will close the modal -->
-                  <button id="goHome" class="btn">Go Home</button>
-                </div>
-              </form>
+              
+            <form method="dialog" class="modal-box justify-center text-center">
+              <div class="flex justify-center items-center h-full"> <!-- Center both horizontally and vertically -->
+                  <img class="justify-center" src="./congo.png" alt="">
+              </div>
+              <h3 class="font-bold text-lg">Congratulations!</h3>
+              <p class="py-4">You purchased the product</p>
+              <div class="modal-action flex justify-center items-center h-full"> <!-- Center both horizontally and vertically -->
+                  <button id="goHome" class="btn text-center bg-rose-600">Go Home</button>
+              </div>
+          </form>
+         
             </dialog>
           </div>
         </div>
@@ -175,6 +181,8 @@
 
 
   <script src="./Js/test.js"></script>
+ 
+
 
 
 
