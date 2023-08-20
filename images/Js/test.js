@@ -27,12 +27,11 @@ function updateButtons() {
         applyCouponButton.disabled = true;
     }
 
-    // Disable the "Make Purchase" button if the coupon is applied and discounted total is greater than 0
-    const discountedTotal = parseFloat(document.getElementById('discounted-total').textContent);
-    if (discountedTotal > 0) {
-        makePurchaseButton.disabled = true;
-    } else {
+    // Enable the "Make Purchase" button if the total amount is greater than 0
+    if (totalAmount > 0) {
         makePurchaseButton.disabled = false;
+    } else {
+        makePurchaseButton.disabled = true;
     }
 }
 
@@ -101,3 +100,5 @@ cards.forEach(card => {
         makeBtnClick(this);
     });
 });
+// 
+ 
