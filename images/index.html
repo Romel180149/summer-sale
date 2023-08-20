@@ -137,11 +137,32 @@
   
           <ul id="card-list"></ul>
   
-          <div id="total-amount"><p>Total price:</p>0.00</div>
-          <button id="make-purchase-button" disabled class="bg-rose-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Make Purchase
-          </button>
-          <br>
+          <div id="total-amount"><span>Total Price:</span>0.00</div>
+       
+<div id="discount-amount"><span>Discount:</span>0.00 TK</div>
+<div id="discounted-total"><span>Discounted Total:</span>0.00 TK</div>
+<button id="make-purchase-button" disabled class="bg-rose-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+  Make Purchase
+</button>
+<!-- Modal -->
+<div class="fixed inset-0 z-50 hidden overflow-auto flex items-center justify-center" id="purchase-modal">
+  <div class="modal-overlay absolute inset-0 bg-black opacity-50"></div>
+
+  <div class="modal-container bg-white w-11/12 md:max-w-md mx-auto rounded shadow-lg z-50 overflow-y-auto">
+    <!-- Add your modal content here -->
+    <div class="modal-content py-4 text-left px-6">
+      <h2 class="text-xl font-semibold mb-2">Confirm Purchase</h2>
+      <p class="mb-4">Are you sure you want to make this purchase?</p>
+      <div class="flex justify-end">
+        <button class="px-4 py-2 bg-gray-300 text-gray-800 rounded mr-2" id="cancel-modal">Cancel</button>
+        <button class="px-4 py-2 bg-blue-500 text-white rounded" id="confirm-purchase">Confirm</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
         
 </div>
 
