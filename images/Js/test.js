@@ -55,6 +55,13 @@ applyCouponButton.addEventListener('click', function () {
 
 
 
+function updateDiscountedTotal(discountedTotal, discount) {
+    const discountedTotalElement = document.getElementById('discounted-total');
+    const discountAmountElement = document.getElementById('discount-amount');
+
+    discountedTotalElement.textContent = `Discounted Total: ${discountedTotal.toFixed(2)} TK`;
+    discountAmountElement.textContent = `Discount: ${discount.toFixed(2)} TK`;
+}
 
 
 
@@ -94,4 +101,3 @@ cards.forEach(card => {
         makeBtnClick(this);
     });
 });
-
